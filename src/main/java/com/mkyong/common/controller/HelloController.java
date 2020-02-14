@@ -10,8 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HelloController {
  
 	@RequestMapping(method = RequestMethod.GET)
-	public String printWelcome(ModelMap model) {
- 
+	public String printWelcome(ModelMap model) 
+	{
+ if (true) { String a = ""; }
 		model.addAttribute("message", "Spring Security Hello World");
 		return "hello";
  
