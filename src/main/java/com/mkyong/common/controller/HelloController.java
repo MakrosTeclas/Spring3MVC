@@ -12,7 +12,10 @@ public class HelloController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) 
 	{
- if (true) { String a = ""; }
+ if (true) { String a = ""; 
+	   }
+		else
+		{String a = "SOPA";}
 		model.addAttribute("message", "Spring Security Hello World");
 		return "hello";
  
